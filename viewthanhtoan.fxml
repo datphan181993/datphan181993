@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlNhanVien.ViewThanhToanController">
+   <children>
+      <Label layoutX="149.0" layoutY="14.0" prefHeight="46.0" prefWidth="603.0" text="PHÒNG KHÁM SẢN PHỤ KHOA QUANG ANH">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="110.0" prefHeight="29.0" prefWidth="222.0" text="HÓA ĐƠN THANH TOÁN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="140.0" prefHeight="17.0" prefWidth="118.0" text="Mã Khách Hàng : ">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="206.0" prefHeight="29.0" prefWidth="124.0" text="Ngày tạo hóa đơn :">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="52.0" prefHeight="29.0" prefWidth="499.0" text="Địa chỉ : Thị Tứ Thạch Châu - Huyện Lộc Hà - Tỉnh Hà Tĩnh">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="81.0" prefHeight="29.0" prefWidth="158.0" text="Sđt : 0945 758 809">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="171.0" prefHeight="29.0" prefWidth="54.0" text="Họ tên :">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="macuahd" layoutX="637.0" layoutY="136.0" prefHeight="29.0" prefWidth="142.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="nhapmakhachhang" layoutX="369.0" layoutY="136.0" prefHeight="29.0" prefWidth="142.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="sdtkh" layoutX="580.0" layoutY="173.0" prefHeight="29.0" prefWidth="152.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="hotenkh" layoutX="311.0" layoutY="173.0" prefHeight="29.0" prefWidth="222.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="538.0" layoutY="173.0" prefHeight="29.0" prefWidth="37.0" text="Sđt :">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="543.0" layoutY="136.0" prefHeight="29.0" prefWidth="92.0" text="Mã Hóa Đơn :">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngaytaohoadon" layoutX="392.0" layoutY="206.0" prefHeight="29.0" prefWidth="236.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablethanhtoan" layoutX="91.0" layoutY="245.0" prefHeight="342.0" prefWidth="748.0">
+        <columns>
+          <TableColumn fx:id="mahang2" prefWidth="84.80001068115234" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Mã sản phẩm" />
+          <TableColumn fx:id="tenhang2" prefWidth="315.20001220703125" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Tên sản phẩm" />
+            <TableColumn fx:id="soluong2" prefWidth="110.39999389648438" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Số lượng" />
+            <TableColumn fx:id="giatien2" minWidth="3.20001220703125" prefWidth="127.2000732421875" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Giá tiền" />
+            <TableColumn fx:id="thanhtien2" prefWidth="115.19998168945312" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Thành tiền" />
+        </columns>
+      </TableView>
+      <Label layoutX="497.0" layoutY="602.0" prefHeight="29.0" prefWidth="118.0" text="TỔNG TIỀN : ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tongtien" layoutX="614.0" layoutY="602.0" prefHeight="29.0" prefWidth="124.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="746.0" layoutY="602.0" prefHeight="29.0" prefWidth="46.0" text="VNĐ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="637.0" prefHeight="29.0" prefWidth="142.0" text="Kết luận của Bác sĩ : ">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ketluancuabacsi" layoutX="226.0" layoutY="637.0" prefHeight="29.0" prefWidth="635.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ngaytaikham" layoutX="227.0" layoutY="666.0" prefHeight="29.0" prefWidth="110.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="666.0" prefHeight="29.0" prefWidth="135.0" text="Hẹn quý khách ngày">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="666.0" prefHeight="29.0" prefWidth="80.0" text="tái khám.">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="687.0" prefHeight="29.0" prefWidth="152.0" text="Bác sĩ Chuyên Khoa I :">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="phanquanganh" layoutX="567.0" layoutY="756.0" prefHeight="36.0" prefWidth="179.0" text="PHAN QUANG ANH" textFill="#181818">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

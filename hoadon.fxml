@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1201.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qliphongkham.fxmlNhanVien.HoadonController">
+   <children>
+      <Label layoutX="14.0" layoutY="22.0" prefHeight="35.0" prefWidth="219.0" text="Mã , tên thuốc hoặc dịch vụ : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablehienthi" layoutX="14.0" layoutY="80.0" prefHeight="608.0" prefWidth="495.0">
+        <columns>
+          <TableColumn fx:id="mahang1" prefWidth="81.59997272491455" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Mã sản phẩm" />
+          <TableColumn fx:id="tenhang1" prefWidth="257.6000518798828" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Tên sản phẩm" />
+            <TableColumn fx:id="giatien1" minWidth="0.0" prefWidth="154.20001220703125" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Giá tiền" />
+        </columns>
+      </TableView>
+      <TextField fx:id="seachThuocDV" layoutX="233.0" layoutY="21.0" onKeyPressed="#evseachThuocDV" prefHeight="36.0" prefWidth="275.0" promptText="Tìm thuốc và dịch vụ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="724.0" layoutY="16.0" prefHeight="47.0" prefWidth="290.0" text="HÓA ĐƠN THANH TOÁN">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablethanhtoan" layoutX="520.0" layoutY="134.0" prefHeight="418.0" prefWidth="682.0">
+        <columns>
+          <TableColumn fx:id="mahang2" prefWidth="80.79998779296875" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Mã sản phẩm" />
+          <TableColumn fx:id="tenhang2" prefWidth="230.4000244140625" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Tên sản phẩm" />
+            <TableColumn fx:id="soluong2" prefWidth="75.0" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Số lượng" />
+            <TableColumn fx:id="giatien2" prefWidth="112.0001220703125" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Giá tiền" />
+            <TableColumn fx:id="thanhtien2" prefWidth="121.5999755859375" style="-fx-alignment: CENTER;" styleClass="table-cell" text="Thành tiền" />
+        </columns>
+      </TableView>
+      <JFXButton onMouseClicked="#handleButtonThanhToan" layoutX="768.0" layoutY="610.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="186.0" styleClass="btn-login" text="THANH TOÁN" textFill="#306bb9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="849.0" layoutY="552.0" prefHeight="35.0" prefWidth="116.0" text="TỔNG TIỀN :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="tongtien" layoutX="965.0" layoutY="552.0" prefHeight="35.0" prefWidth="100.0" textFill="#2609df">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="537.0" layoutY="59.0" prefHeight="36.0" prefWidth="176.0" text="Nhập mã Khách Hàng :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nhapmakhachhang" layoutX="724.0" layoutY="65.0" prefHeight="30.0" prefWidth="122.0" promptText="Mã Khách Hàng">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <Label layoutX="1065.0" layoutY="552.0" prefHeight="35.0" prefWidth="60.0" text="VNĐ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="540.0" layoutY="95.0" prefHeight="35.0" prefWidth="176.0" text="Kết luận của Bác Sĩ :">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ketluancuabacsi" layoutX="724.0" layoutY="100.0" prefHeight="25.0" prefWidth="470.0" promptText="Kết luận của Bác Sĩ">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <DatePicker fx:id="ngaytaikham" layoutX="929.0" layoutY="65.0" prefHeight="30.0" prefWidth="186.0" promptText="Ngày tái khám" />
+   </children>
+</Pane>
